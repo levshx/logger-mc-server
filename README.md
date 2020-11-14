@@ -1,5 +1,6 @@
 # logger-mc-server
 Minecraft logger (Moderation tools)
+[![Build Status](https://travis-ci.org/bkaradzic/bgfx.svg?branch=master)](https://github.com/levshx/logger-mc-server/releases/tag/Ant)
 
 ![Main](https://sun9-51.userapi.com/GD3opq0rZy0cIYgKWrDuoYZFUNcsFXtlZK43Zg/E-cfp-GmimY.jpg)
 
