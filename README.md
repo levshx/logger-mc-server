@@ -11,6 +11,11 @@ Push notifications
 
 ![Main](https://sun9-49.userapi.com/8uohoLFQ68EJbWSWb3BlJDXGgDlN1CtVyozA6Q/TGSMqPkce7I.jpg)
 
+### Message types:
+* [G] Global chat
+* [L] Local chat
+* [C] Commands
+
 
 ## Triggers:
 ![Trigger1](https://sun9-32.userapi.com/bt5-NMiInq_X-JvhBjuFYf03NvLgpAJF-GYHDg/e6EmtsZw-CA.jpg)
