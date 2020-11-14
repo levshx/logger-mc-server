@@ -26,6 +26,7 @@ Push notifications
 
 ![Trigger4](https://sun9-58.userapi.com/5G4ZbzSFJMD1AERif3IBki790UBtGo-yFy2n3w/MTIj3H3KjmM.jpg)
 
+![Trigger5](https://sun9-8.userapi.com/ZDYNUI6xSuo3lwYtgRE7k01PO8GQJyQ1woD3Lg/xFn2fPDyXa0.jpg)
 
 ## More settings in settings.json
 ```json
