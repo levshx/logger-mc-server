@@ -7,11 +7,16 @@ Push notifications
 
 ![Main](https://sun9-49.userapi.com/8uohoLFQ68EJbWSWb3BlJDXGgDlN1CtVyozA6Q/TGSMqPkce7I.jpg)
 
+
 ## Triggers:
 ![Trigger1](https://sun9-32.userapi.com/bt5-NMiInq_X-JvhBjuFYf03NvLgpAJF-GYHDg/e6EmtsZw-CA.jpg)
+
 ![Trigger2](https://sun9-19.userapi.com/SZ24SWcW8tFxaQxiRDhceBpUr8hSOzXedL5sjg/xQtiMFAfSnA.jpg)
+
 ![Trigger3](https://sun9-50.userapi.com/cYLOlF5E2TAy213AoiX0fQE_d2W8HsJxwR_T7w/Bn5NVEudgXY.jpg)
+
 ![Trigger4](https://sun9-58.userapi.com/5G4ZbzSFJMD1AERif3IBki790UBtGo-yFy2n3w/MTIj3H3KjmM.jpg)
+
 
 ## More settings in settings.json
 ```json
