@@ -1,5 +1,9 @@
 # logger-mc-server
 
+## Project closed
+# Description
+Dev1lRoot aka main developer of (mcskill.ru && shadowcraft.ru) make new system of log view
+
 [![Build Status](https://travis-ci.org/bkaradzic/bgfx.svg?branch=master)](https://github.com/levshx/logger-mc-server/releases/tag/Ant)
 
 Minecraft logger (Moderation tools)
