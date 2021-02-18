@@ -93,4 +93,6 @@ Minecraft logger (Moderation tools)
 ```
 
 # Build
-Install (add in project) nuget MetroFramework 
+For buld install in nuget:
+* Newtonsoft.Json
+* MetroFramework
