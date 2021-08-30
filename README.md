@@ -4,7 +4,7 @@
 
 Minecraft server LOGGER
 
-[![Github REPORT](https://img.shields.io/static/v1?label=GITHUB&message=REPORT%20BUGS&style=for-the-badge&logo=GitHub)](https://github.com/levshx/logger-mc-server/issues)
+[![Github REPORT](https://img.shields.io/static/v1?label=GITHUB&message=REPORT%20BUGS&style=for-the-badge&logo=GitHub)](https://github.com/levshx/logger-mc-server/issues/new)
 <!-- # Badges -->
 
 [![Github issues](https://img.shields.io/github/issues/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/issues)
