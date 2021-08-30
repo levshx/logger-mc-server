@@ -103,7 +103,7 @@ Minecraft server LOGGER
 
 # Installation
 
-Download #Ant [Release](https://github.com/levshx/logger-mc-server/releases/tag/Ant)
+[Download](https://github.com/levshx/logger-mc-server/releases/tag/Ant) `Release-logger-mc.zip`
 
 # Deployment
 
