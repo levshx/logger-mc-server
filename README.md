@@ -1,15 +1,24 @@
 # logger-mc-server
 
-## Project closed
-# Description
-MC logger 
-[![Build Status](https://travis-ci.org/bkaradzic/bgfx.svg?branch=master)](https://github.com/levshx/logger-mc-server/releases/tag/Ant)
+<!-- # Short Description -->
 
-Minecraft logger (Moderation tools)
+Minecraft server LOGGER
 
+<!-- # Badges -->
 
-![Main](https://sun9-51.userapi.com/GD3opq0rZy0cIYgKWrDuoYZFUNcsFXtlZK43Zg/E-cfp-GmimY.jpg)
+[![Github issues](https://img.shields.io/github/issues/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/issues)
+[![Github forks](https://img.shields.io/github/forks/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/network/members)
+[![Github stars](https://img.shields.io/github/stars/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/stargazers)
+[![Github top language](https://img.shields.io/github/languages/top/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
+[![Github license](https://img.shields.io/github/license/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
 
+# Tags
+
+`C#` `.NET` `Minecraft` `Server`
+
+# Demo
+
+![Demo](resources/file-0.jpeg)
 
 ### Message types:
 * [G] Global chat
@@ -25,7 +34,7 @@ Minecraft logger (Moderation tools)
 * Restart trigger
 * Player join trigger
 
-## More settings in settings.json
+### More settings in settings.json
 ```json
   {
     "https": false,
@@ -91,7 +100,18 @@ Minecraft logger (Moderation tools)
   }
 ```
 
-# Build
-For buld install in nuget:
+# Installation
+
+Download #Ant [Release](https://github.com/levshx/logger-mc-server/releases/tag/Ant)
+
+# Deployment
+
+Install in nuget:
 * Newtonsoft.Json
 * MetroFramework
+
+# Contributors
+
+- [levshx](https://github.com/levshx)
+
+<!-- CREATED_BY_LEADYOU_README_GENERATOR -->
