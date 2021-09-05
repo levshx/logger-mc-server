@@ -25,81 +25,13 @@ Minecraft server LOGGER
 * [G] Global chat
 * [L] Local chat
 * [C] Commands
-
+* [M] Message [/mail /m /msg /r /w]
+* [PvP] Kills
+* [P] Death/Kicked/Join/Left/AFK/noAFK
+* [S] Shutdown/Starting
 
 ### Triggers:
-* Ads warp
-* Ads commerce
-* Words trigger
-* Commands trigger
-* Restart trigger
-* Player join trigger
-
-### More settings in settings.json
-```json
-  {
-    "https": false,
-    "chatUrl": "logs.s9.mcskill.ru/Technomagic2_public_logs/",
-    "dropUrl": "logs.s9.mcskill.ru/Technomagic2_logger_public_logs/",
-    "deathUrl": "logs.s9.mcskill.ru/Technomagic2_public_logs/",
-    "adCommerce": true,
-    "obscenity": true,
-    "adWarp": true,
-    "restartedTrigger": true,
-    "adCommerceWords": [
-      "продаю",
-      "продам",
-      "обменяю",
-      "куплю"
-    ],
-    "adWarpWords": [
-      "warp",
-      "/warp",
-      "варп"
-    ],
-    "commandsTrigger": [
-      "/screenshot levshx",
-      "/warp end",
-      "/seen levshx",
-      "/whois levshx",
-      "/tp levshx",
-      "/vanish"
-    ],
-    "obscenityWords": [
-      "s*ka",
-      "b**at",
-      "н**уй",
-      "б**дь",
-      "кр*тин"
-    ],
-    "playerJoinTrigger": [
-      "SkyDrive_",
-      "Astrallis",
-      "levshx",
-      "moskovroma",
-      "Flying_Joe",
-      "n1ke374",
-      "bng"
-    ],
-    "publicWordsTrigger": [
-      "levshx",
-      "лев",
-      "левша"
-    ],
-    "localWordsTrigger": [
-      "бесплатно",
-      "верни",
-      "дюп",
-      "баг"
-    ],
-    "messageWordsTrigger": [
-      "бесплатно",
-      "пожалуйста",
-      "дюп",
-      "баг"
-    ]
-  }
-```
+* custom triggers
 
 # Installation
 
@@ -107,9 +39,11 @@ Minecraft server LOGGER
 
 # Deployment
 
-Install in nuget:
-* Newtonsoft.Json
-* MetroFramework
+.NET Framework 4.7.2
+
+NuGet:
+* Newtonsoft.Json 13.0.1
+* MetroModernUI 1.4.0.0
 
 # Contributors
 
