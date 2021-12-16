@@ -27,6 +27,7 @@ namespace LoggerCore
         public LogLines currentLogLines = new LogLines();
         public LogList currentLogList = new LogList();
         public Log currentLog = new Log();
+        public MessagesRelations msgRelations = new MessagesRelations();
         // его конец
 
         public Settings()
