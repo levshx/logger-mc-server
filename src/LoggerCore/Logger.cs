@@ -82,8 +82,12 @@ namespace LoggerCore
             settingsPoint.currentLog = LogList.getCurrentLog(settingsPoint);
             settingsPoint.currentLogList = LogList.getCurrentLogList(settingsPoint);
 
+            DateTime last_datetime;
+
             var currentLogStringList = settingsPoint.currentLog.getLog();
             int log_line_number = currentLogStringList.Count()-1;
+
+            last_datetime = settingsPoint.currentLog.date;
             while (true)
             {
                 if (settingsPoint.work == true)
@@ -91,23 +95,32 @@ namespace LoggerCore
                     settingsPoint.currentLog = LogList.getCurrentLog(settingsPoint);
                     settingsPoint.currentLogList = LogList.getCurrentLogList(settingsPoint);
 
-                    currentLogStringList = settingsPoint.currentLog.getLog();
-
-                    if (currentLogStringList.Count > 0)
+                    if (settingsPoint.currentLog.date > last_datetime)
                     {
+                        log_line_number = 0;
+                        last_datetime = settingsPoint.currentLog.date;
+                        // Надо вывести сообщение о новой дате
+                    }
+                    else
+                    {
+                        currentLogStringList = settingsPoint.currentLog.getLog();
 
-                        for (int i = log_line_number; i < currentLogStringList.Count; i++)
+                        if (currentLogStringList.Count > 0)
                         {
-                            var tmp_new_line = new LogLine(DateTime.Now, 0, null, null, null, null, 0);
-                            tmp_new_line.text = currentLogStringList[i];
-                            settingsPoint.currentLogLines.Add(tmp_new_line);
 
 
-                            // Устанавливаем новую текущую строку
-                            log_line_number++;
+                            for (int i = log_line_number; i < currentLogStringList.Count; i++)
+                            {
+                                LogLine.LineСonversion(currentLogStringList[i], settingsPoint);
+
+                                // Устанавливаем новую текущую строку
+                                log_line_number++;
+                            }
+
                         }
-                        
-                    }               
+                    }
+
+                           
 
                 }                
                 Thread.Sleep(settingsPoint.sleep);                

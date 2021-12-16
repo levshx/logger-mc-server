@@ -17,7 +17,7 @@ namespace LoggerCore
             }
             else
             {
-                return null;
+                return new Log();
             }            
         }
 
@@ -66,21 +66,27 @@ namespace LoggerCore
 
     public class Log
     {
-        public string name;
+        public string name = "";
         public DateTime date;
-        public string url;
+        public string url = "";
 
         public List<string> getLog()
         {
-            var download_callback = Logger.Download(this.url, "logs/"+this.name+".log");
-            if (download_callback.status)
+            if (this.url.Length>0)
             {
-                return new List<string>(File.ReadAllLines("logs/" + this.name + ".log"));
+                var download_callback = Logger.Download(this.url, "logs/" + this.name + ".log");
+                if (download_callback.status)
+                {
+                    return new List<string>(File.ReadAllLines("logs/" + this.name + ".log"));
+                }
+                else
+                {
+                    return new List<string>();
+                }
             }
             else
-            {
                 return new List<string>();
-            }            
+
         }
     }
 

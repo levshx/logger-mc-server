@@ -23,6 +23,9 @@ namespace LoggerCore
             Console.WriteLine();
             Console.ResetColor();
 
+            Console.WriteLine("Это модуль приложения Logger");
+            Console.WriteLine("Не запускайте их вместе");
+            Console.ReadLine();
             Logger core = new Logger();
             core.Start();
             Thread.Sleep(1000);
