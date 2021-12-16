@@ -54,6 +54,9 @@ namespace Logger
             this.LogUpdateTimer = new System.Windows.Forms.Timer(this.components);
             this.WorkToogle = new MetroFramework.Controls.MetroToggle();
             this.GitHubBugsReport = new MetroFramework.Controls.MetroButton();
+            this.TrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.TrayContextMenu = new MetroFramework.Controls.MetroContextMenu(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.LogPage.SuspendLayout();
@@ -61,6 +64,7 @@ namespace Logger
             this.metroPanel3.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.AllLogsPage.SuspendLayout();
+            this.TrayContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroStyleManager
@@ -78,7 +82,7 @@ namespace Logger
             this.metroTabControl1.Location = new System.Drawing.Point(20, 74);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(969, 593);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -370,6 +374,27 @@ namespace Logger
             this.GitHubBugsReport.UseSelectable = true;
             this.GitHubBugsReport.Click += new System.EventHandler(this.GitHubBugsReport_Click);
             // 
+            // TrayIcon
+            // 
+            this.TrayIcon.ContextMenuStrip = this.TrayContextMenu;
+            this.TrayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("TrayIcon.Icon")));
+            this.TrayIcon.Text = "Logger";
+            this.TrayIcon.Visible = true;
+            // 
+            // TrayContextMenu
+            // 
+            this.TrayContextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.TrayContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.TrayContextMenu.Name = "TrayContextMenu";
+            this.TrayContextMenu.Size = new System.Drawing.Size(103, 28);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(102, 24);
+            this.toolStripMenuItem1.Text = "Kek";
+            // 
             // FormGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -396,6 +421,7 @@ namespace Logger
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
             this.AllLogsPage.ResumeLayout(false);
+            this.TrayContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,5 +452,8 @@ namespace Logger
         private System.Windows.Forms.TabPage SettingsPage;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton GitHubBugsReport;
+        private MetroFramework.Controls.MetroContextMenu TrayContextMenu;
+        public System.Windows.Forms.NotifyIcon TrayIcon;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

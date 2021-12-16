@@ -109,11 +109,8 @@ namespace Logger
         {
             LoggerCore.LogLines tmp_loglines = new LogLines();
             tmp_loglines = core.GetLines();
-            tmp_loglines.ForEach(SendLog);
-            void SendLog(LogLine tmp_line)
-            {
-                LogRichTextBox.AppendText(tmp_line.text+"\n", Color.FromArgb(random.Next(0, 256), random.Next(0, 256), random.Next(0, 256)));
-            }
+            tmp_loglines.ForEach(DrawLine); // вызов функции обработки строки
+            
             
             if (LogsListBox.Items.Count < core.GetLogList().Count)
             {
@@ -163,6 +160,63 @@ namespace Logger
         {
             System.Diagnostics.Process.Start("https://github.com/levshx/logger-mc-server/issues/new");
         }
-               
+              
+        public void DrawLine(LogLine logline)
+        {
+            switch (logline.type)
+            {
+                case (int)LogLine.LineType.GlobalChat:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[G] ", Color.FromArgb(0, 180, 255));
+                    LogRichTextBox.AppendText(logline.nick + ": ", Color.FromArgb(180, 180, 180), true);                    
+                    LogRichTextBox.AppendText(logline.text+ "\n", Color.FromArgb(0, 180, 255));
+                    break;
+                case (int)LogLine.LineType.LocalChat:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[L] ", Color.FromArgb(0, 255, 180));                    
+                    LogRichTextBox.AppendText(logline.nick + ": ", Color.FromArgb(180, 180, 180), true);                    
+                    LogRichTextBox.AppendText(logline.text + "\n", Color.FromArgb(0, 255, 180));
+                    break;
+                case (int)LogLine.LineType.Command:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[C] ", Color.FromArgb(180, 80, 0));                    
+                    LogRichTextBox.AppendText(logline.nick + ": ", Color.FromArgb(180, 180, 180), true);                    
+                    LogRichTextBox.AppendText(logline.text + "\n", Color.FromArgb(180, 80, 0));
+                    break;
+                case (int)LogLine.LineType.PlayerConnect:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[P] ", Color.FromArgb(139, 0, 255));
+                    LogRichTextBox.AppendText(logline.nick + " зашёл\n", Color.FromArgb(139, 0, 255), true);                    
+                    break;
+                case (int)LogLine.LineType.PlayerDisconnect:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[P] ", Color.FromArgb(139, 0, 255));
+                    LogRichTextBox.AppendText(logline.nick + " вышел\n", Color.FromArgb(139, 0, 255), true);
+                    break;
+                case (int)LogLine.LineType.Kick:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[P] ", Color.FromArgb(139, 0, 255));
+                    LogRichTextBox.AppendText(logline.nick + " был кикнут\n", Color.Red, true);
+                    break;
+                case (int)LogLine.LineType.Death:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[P] ", Color.FromArgb(139, 0, 255));
+                    LogRichTextBox.AppendText(logline.nick + " умер\n", Color.FromArgb(180, 180, 180), true);
+                    break;
+                case (int)LogLine.LineType.Kill:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[PvP] ", Color.Olive);
+                    LogRichTextBox.AppendText(logline.nick + " убил " + logline.nick2+ "\n", Color.Olive, true);
+                    break;
+                case (int)LogLine.LineType.Message:
+                    LogRichTextBox.AppendText("[" + logline.datetime.ToString("HH:mm:ss") + "] ", Color.FromArgb(180, 180, 180));
+                    LogRichTextBox.AppendText("[M] ", Color.Orange);
+                    LogRichTextBox.AppendText(logline.nick + " ✉→ " + logline.nick2 + ": ", Color.Orange, true);
+                    LogRichTextBox.AppendText(logline.text + "\n", Color.OrangeRed);
+
+                    break;
+            }
+        }
+
     }
 }

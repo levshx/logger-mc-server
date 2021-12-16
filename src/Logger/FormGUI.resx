@@ -208,4 +208,26 @@
   <metadata name="LogUpdateTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>191, 1</value>
   </metadata>
+  <metadata name="TrayIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>361, 1</value>
+  </metadata>
+  <metadata name="TrayContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>475, 1</value>
+  </metadata>
+  <data name="TrayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAgIAAAAEAIACvAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAACAAAAAgAgDAAAA9OCR+QAAAAFz
+        UkdCAdnJLH8AAAAJcEhZcwAACxMAAAsTAQCanBgAAACuUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAADG
+        CgBnBTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0RE
+        REVFRUZGRkdHR0hISElJSUpKSoCAgH9/f35+fn19fXx8fHt7e3l5eXh4eHZ2dnR0dHNzc3FxcW9vb21t
+        bWxsbFn8YWpqamhoaGdnZ2VlZWRkZGNjY2JiYmFhYZkICvkAAAA6dFJOUwAeh8P/WO//////////////
+        //////////////////////////////////////////////////////+ly5BKAAABVElEQVR4nO3bx3aC
+        ABCFYQTUNDrSiUlM7728/4sFDCTnuJyZMHq8/47VfOiGNoaBEEIIIYQQahuZlj1wljn6mz+eDD2+bTL+
+        PX+V+Y2g/w1Mnfm2bXaAwf//PqsDLA+mA7XTtRwKAAAArCVg96e9tv2mgybHcVzX9TzP9/0gCMIwjKIo
+        juPZLEmSNE2zLMvzvCiKsiyrqqrr+rBp3nTUdtwGAAAAbB7gRKjNBSyEIgNOhSIDzoQiA86FIgMuhCID
+        LoUiA66EIgOuhSIDboQiA26FIgPuhCID7oUiAx6EIgMehSIDnrqembEBL8zYgFdmbMAbMzbgnRkb8MGM
+        DfhkxgZ8MWMD+ga/MQEAAADUAf0DilUIAAAAAAAAAACwPYDVwdt3RQQAAAD0g9VeXAIAAADqAPUPGAAA
+        AAA1wH8HAAAArCVAfcFBfcVDfclFfc3H0Fx0+gYq+7i6J1WU0gAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
