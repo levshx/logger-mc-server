@@ -12,6 +12,7 @@ Minecraft server LOGGER
 [![Github stars](https://img.shields.io/github/stars/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/stargazers)
 [![Github top language](https://img.shields.io/github/languages/top/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
 [![Github license](https://img.shields.io/github/license/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
+[![Build](https://github.com/levshx/logger-mc-server/actions/workflows/build.yml/badge.svg)](https://github.com/levshx/logger-mc-server/actions/workflows/build.yml)
 
 # Tags
 
