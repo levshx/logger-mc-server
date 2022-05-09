@@ -1,18 +1,18 @@
 # logger-mc-server
 
+[![Build](https://github.com/levshx/logger-mc-server/actions/workflows/build.yml/badge.svg)](https://github.com/levshx/logger-mc-server/actions/workflows/build.yml)
+[![Github issues](https://img.shields.io/github/issues/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/issues)
+[![Github forks](https://img.shields.io/github/forks/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/network/members)
+[![Github stars](https://img.shields.io/github/stars/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/stargazers)
+[![Github top language](https://img.shields.io/github/languages/top/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
+[![Github license](https://img.shields.io/github/license/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
+
 <!-- # Short Description -->
 
 Minecraft server LOGGER
 
 [![Github REPORT](https://img.shields.io/static/v1?label=GITHUB&message=REPORT%20BUGS&style=for-the-badge&logo=GitHub)](https://github.com/levshx/logger-mc-server/issues/new)
 <!-- # Badges -->
-
-[![Github issues](https://img.shields.io/github/issues/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/issues)
-[![Github forks](https://img.shields.io/github/forks/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/network/members)
-[![Github stars](https://img.shields.io/github/stars/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/stargazers)
-[![Github top language](https://img.shields.io/github/languages/top/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
-[![Github license](https://img.shields.io/github/license/levshx/logger-mc-server)](https://github.com/levshx/logger-mc-server/)
-[![Build](https://github.com/levshx/logger-mc-server/actions/workflows/build.yml/badge.svg)](https://github.com/levshx/logger-mc-server/actions/workflows/build.yml)
 
 # Tags
 
